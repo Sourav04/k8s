@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: flaskapp1
+  name: flaskapp1
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flaskapp1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: flaskapp1
+    spec:
+      containers:
+      - image: flask-app1
+        name: flask-app1
+        resources: {}
+status: {}
