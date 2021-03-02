@@ -19,7 +19,7 @@ spec:
         app: flaskapp1
     spec:
       containers:
-      - image: flask-app1
+      - image: docker.io/souravdixit04/flask_app1:latest
         name: flask-app1
         resources: {}
 status: {}
